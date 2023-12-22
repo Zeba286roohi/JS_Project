@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Image Editor</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="editor-container">
+    <input type="file" id="image-input" accept="image/*">
+    <br>
+    <img id="image-preview" alt="Preview">
+    <br>
+    <label for="filter-select">Choose a filter:</label>
+    <select id="filter-select">
+      <option value="grayscale">Grayscale</option>
+      <option value="sepia">Sepia</option>
+      <option value="invert">Invert</option>
+    </select>
+    <br>
+    <button onclick="applyFilter()">Apply Filter</button>
+    <br>
+    <a id="download-link" style="display: none" download="edited_image.png">
+      <button>Download Edited Image</button>
+    </a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

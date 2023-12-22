@@ -1,0 +1,14 @@
+movie app with js
+phone directory with react
+-----------
+senior postion with js
+Chat Application with Real-Time Messaging
+E-commerce Website with Payment Integration
+Task Management Tool with User Authentication
+Interactive Data Visualization Dashboard
+Social Media Platform with User Profiles and Feeds
+Weather Forecast Application with API Integration
+Content Management System (CMS) for Blogging
+Online Quiz Platform with Question Bank and Scoring
+Music Player with Playlist Management
+Responsive Portfolio Website with Modern UI Design

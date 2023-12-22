@@ -1,0 +1,66 @@
+/* Navigation bar */
+/* .nav-menu{
+    list-style: none;
+    padding: 10px;
+    background-color:#000;
+}
+ul.nav-menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+ul.nav-menu li a{
+    text-decoration: none;
+    color: #fff;
+}  */
+
+/* Drop down Navigation */
+/* .nav-menu{
+    list-style: none;
+    padding: 10px;
+    background-color:#000;
+}
+ul.nav-menu li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+ul.nav-menu li a{
+    text-decoration: none;
+    color: #fff;
+} 
+    /* Style for the dropdown menu */
+    /* ul.nav-menu ul {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul.nav-menu li:hover ul {
+        display: block; /* Show the dropdown when the list item is hovered */
+      /* }
+      ul.nav-menu ul li {
+        margin: 10px;
+      }
+      ul.nav-menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: normal;
+      }  */
+   .nav-menu{
+    list-style: none;
+    padding: 10px;
+    background-color: #000;
+   }
+   ul.nav-menu li{
+    display: block;
+    padding: 10px;
+   }
+   ul.nav-menu li a{
+    text-decoration: none;
+    color: #fff;
+   }
+   ul.nav-menu li a:hover{
+    color:grey;
+   }

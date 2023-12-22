@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+  @keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    70%{
+      transform: scale(1.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: scaleAnimation 2s ease infinite;
+  }
+</style>
+</head>
+<body>
+  <div class="animated-element"></div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Lora:ital,wght@0,400;1,400;1,500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-size: 14px;
+        font-family: 'Lora';
+    }
+    .static{
+        position: static;
+        border: 1px solid blue;
+    }
+    .container{
+        border: 1px solid red;
+        width: 100%;
+    }
+    .box{
+        border: 1px solid blue;
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        margin: 20px;
+        display: inline-block;
+
+    }
+    #relative{
+        position: relative;
+        top: 20px;
+        left: 30px;
+        bottom: 10px;
+    }
+.container1{
+    border: 1px solid red;
+    width: 400px;
+    height: 350px;
+    position: relative;
+  margin-left: 700px;
+}
+.absolute{
+    width: 200px;
+    height: 100px;
+    border: 1px solid blue;
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+}
+.fixed{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    /* top: 20px; */
+    bottom:10px;
+    right: 10px;
+    border: 1px solid red;
+}
+.sticky{
+    position: sticky;
+    bottom: 20px;
+    right: 10px;
+    left: 10px;
+    border: 1px solid blue;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+}
+.boxs{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 900px;
+    position: absolute;
+}
+#box1{
+    background-color: aqua;
+    left: 50px;
+    top: 50px;
+    z-index: 2;
+}
+#box2{
+    background-color:coral;
+    left: 100px;
+    top: 100px;
+    z-index: 1;
+}
+#box3{
+    background-color: red;
+    left: 150px;
+    top: 150px;
+    z-index: 3;
+}
+.container2{
+    margin-top: 160px;
+}
+.inline{
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
+    border: 1px solid blue;
+    margin: 10px;
+    display: inline;
+}
+.block{
+    /* width: 100px; */
+    height: 100px;
+    background-color: brown;
+    margin: 10px;
+    display: block;
+}
+.inlineblock{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin: 10px;
+    display: inline-block
+}
+</style>
+<body>
+    <!-- https://fonts.google.com/ -->
+    <h2>This is an example of google fonts</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, 
+        fugiat. A, corrupti mollitia voluptatibus enim repellat eos libero quae facilis.</p>
+        <div class="static">Example of Static and this a default property of postion</div>
+        <hr>
+        <div class="container">
+            <div class="box">1</div>
+            <div class="box" id="relative">2</div>
+            <div class="box">3</div>
+        </div>
+        <hr>
+        <h3>Example of Position absolute</h3>
+        <div class="container1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi vitae necessitatibus voluptatum aliquam delectus!</p>
+            <div class="absolute">Example of absolute container.Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <hr>
+        <h3>Exampple of fixed position</h3>
+        <div class="fixed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo sapiente animi! Tempore esse delectus, tempora mollitia doloribus cupiditate quisquam.
+        </div>
+        <h3>Example of Sticky Position</h3>
+        <div class="sticky">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nulla aliquid, suscipit fugit voluptatum nam quos officia ut esse voluptate!
+        </div>
+        <hr>
+        <h3>Example of Z indexx</h3>
+        <div class="boxs" id="box1">box1</div>
+        <div class="boxs" id="box2">box2</div>
+        <div class="boxs" id="box3">box3</div>
+        <hr>
+        <h3>Example of Displays</h3>
+        <div class="container2">
+        <div class="inline">1ghjljljkjkj</div>
+        <div class="inline">2</div>
+        <div class="inline">3</div>
+    </div>
+    <div class="container2">
+        <div class="block">1</div>
+        <div class="block">2</div>
+        <div class="block">3</div>
+    </div>
+    <div class="container2">
+        <div class="inlineblock">1</div>
+        <div class="inlineblock">2</div>
+        <div class="inlineblock">3</div>
+    </div>
+</body>
+</html>
