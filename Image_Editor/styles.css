@@ -1,22 +1,155 @@
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.my-editor-container {
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.my-editor-container h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.my-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.my-editor-panel {
+  width: 48%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.my-title {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.my-options button {
+  outline: none;
+  height: 40px;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  border: 1px solid #aaa;
+}
+
+.my-options button.active {
+  color: #fff;
+  border-color: #4CAF50;
+  background: #4CAF50;
+}
+
+.my-slider {
+  margin-top: 12px;
+}
+
+.my-filter-info {
+  display: flex;
+  color: #464646;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.my-slider input {
+  width: 100%;
+  height: 5px;
+  accent-color: #4CAF50;
+}
+
+.my-preview-img {
+  width: 48%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.my-preview-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.my-controls {
+  text-align: center;
+}
+
+.my-controls button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  background: #4CAF50;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.my-controls button:hover {
+  background: #45a049;
+}
+
+.my-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.my-row .my-file-input {
+  display: none;
+}
+
+.my-row button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  background: #333;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.my-row button:hover {
+  background: #555;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  .my-wrapper {
+    flex-direction: column;
   }
-  
-  #editor-container {
-    text-align: center;
+
+  .my-editor-panel,
+  .my-preview-img {
+    width: 100%;
   }
-  
-  #image-preview {
-    max-width: 100%;
-    max-height: 400px;
-    margin-bottom: 20px;
-  }
-  
-  #filter-select {
-    margin-bottom: 20px;
-  }
-  
+}

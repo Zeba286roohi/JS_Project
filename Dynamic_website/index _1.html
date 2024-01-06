@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style _1.css" >
+</head>
+<body>
+      <h1><center>Dynamic website using javascript</center></h1>
+    <section class="wrapper">
+        <div class="box">
+            <div class="image" draggable="true"></div>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    
+    </section>
+
+        <script>
+            const boxes = document.querySelectorAll(".box"),
+            image = document.querySelector(".image");
+
+            boxes.forEach((box)=>{
+                box.addEventListener("dragover",(e)=>{
+                    e.preventDefault();
+                    box.classList.add('hovered');
+                });
+
+                box.addEventListener("dragleave",()=>{
+                    
+                    box.classList.remove('hovered');
+                });
+                     
+                box.addEventListener("drop",()=>{
+                    box.appendChild(image);
+                    box.classList.remove('hovered');
+                });
+
+
+            });
+
+
+        
+        </script>
+   
+    
+</body>
+</html>

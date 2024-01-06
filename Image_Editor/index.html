@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Image Editor</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <title>My Custom Image Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
+
 <body>
-  <div id="editor-container">
-    <input type="file" id="image-input" accept="image/*">
-    <br>
-    <img id="image-preview" alt="Preview">
-    <br>
-    <label for="filter-select">Choose a filter:</label>
-    <select id="filter-select">
-      <option value="grayscale">Grayscale</option>
-      <option value="sepia">Sepia</option>
-      <option value="invert">Invert</option>
-    </select>
-    <br>
-    <button onclick="applyFilter()">Apply Filter</button>
-    <br>
-    <a id="download-link" style="display: none" download="edited_image.png">
-      <button>Download Edited Image</button>
-    </a>
-  </div>
-  <script src="script.js"></script>
+    <div class="my-editor-container disable">
+        <h2>My Custom Image Editor</h2>
+        <div class="my-wrapper">
+            <div class="my-editor-panel">
+                <div class="my-filter">
+                    <label class="my-title">Adjustments</label>
+                    <div class="my-options">
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <!-- You can customize the available filters here -->
+                    </div>
+                    <div class="my-slider">
+                        <div class="my-filter-info">
+                            <p class="my-name">Adjustment</p>
+                            <p class="my-value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <!-- You can add or remove adjustment options here -->
+            </div>
+            <div class="my-preview-img">
+                <!-- Placeholder image, replace the source with your own image -->
+                <img src="your-image.jpg" alt="preview-img">
+            </div>
+        </div>
+        <div class="my-controls">
+            <button class="my-reset-filter">Reset Adjustments</button>
+            <div class="my-row">
+                <input type="file" class="my-file-input" accept="image/*" hidden>
+                <button class="my-choose-img">Choose Image</button>
+                <button class="my-save-img">Save Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

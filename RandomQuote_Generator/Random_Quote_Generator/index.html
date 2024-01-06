@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+   
+</head>
+<body>
+    <div class="quote-wrapper">
+    <h2>Quote Of The Day</h2>
+    <small id="quote_tags"> </small>
+    <blockquote id="quote-text"> where there is a will ,there is a way</blockquote>
+    <cite id="quote_author"> </cite>
+    <button type="button" id="gen-quote-btn">New Quote</button>
+
+    </div>
+    <script>
+        const quoteText = document.getElementById('quote-text'),
+             quoteTags = document.getElementById('quote-tags'),
+        quoteAuthor = document.getElementById('quote-author'),
+     genQuoteBtn = document.getElementById('gen-quote-btn');
+      
+ function randomQuote(){
+    fetch('https://api.quotable.io/random')
+    .then(response => response.json())
+    .then(data => {
+       quoteText.textContent = data.content;
+       quoteTags.textContent = data.tags;
+       quoteAuthor.textContent = `--${data.author}`;
+    });
+       }
+
+ randomQuote();
+ genQuoteBtn.addEventListener('click',()=>{
+    randomQuote();
+ });
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
